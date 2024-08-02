@@ -1,20 +1,13 @@
-function openTab(evt, tabName) {
-    var i, tabcontent, tablinks;
+document.addEventListener("DOMContentLoaded", () => {
+    // Display a popup message when someone visits the website
+    window.alert("Thank you for visiting my website 🦸🏻‍♀️");
 
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
+    // Set the static greeting message
+    const greeting = document.getElementById("greeting");
+
+    if (greeting) {
+        greeting.style.textAlign = "center";
+        greeting.style.marginTop = "50px";
+        greeting.innerHTML = "Thank you for visiting my website 🦸🏻‍♀️";
     }
-
-    tablinks = document.getElementsByClassName("tablink");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-
-    document.getElementById(tabName).style.display = "block";
-    evt.currentTarget.className += " active";
-}
-
-// Open the default tab
-document.getElementById("Education").style.display = "block";
-document.getElementsByClassName("tablink")[0].className += " active";
+});
