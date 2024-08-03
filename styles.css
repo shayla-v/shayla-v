@@ -8,14 +8,15 @@ body {
     /*font-family: Arial, sans-serif;*/
     display: flex;
     flex-direction: column;
-    background-color: #0e4194;
+    /*background-color: #0e4194;*/
     align-items: center;
     margin: 0;
     /*padding: 50px;*/
 }
 
 .content-container {
-    background-color: #0e4194;
+    /*background-color: #0e4194;*/
+    background-color: #800000;
     width: 100%;
     flex: 1;
     display: flex;
@@ -34,7 +35,9 @@ header {
 }
 
 footer {
-    background-color: #800000;
+    /*background-color: #0e4194;*/
+    background-color: #2b5495;
+    /*background-color: #800000;*/
     font-size: 15px;
     font-weight: bold;
     padding: 25px;
@@ -110,8 +113,8 @@ main {
 
 .back {
     transform: rotateY(180deg);
-    background-color: #fff;
-    color: #000; 
+    background-color: #2b5495;
+    color: #ffecbc; 
     overflow-y: auto;
 }
 
@@ -142,7 +145,7 @@ main {
 }
 
 .name {
-    font-size: 4em;
+    font-size: 3em;
     color: #ffecbc;
     text-shadow: 2px 12px 8px #800000;
 }
@@ -157,9 +160,11 @@ main {
     text-align: center;
     font-weight: lighter;
     font-family: cursive;
-    background: rgba(127, 46, 46, 0.5);
+    /*background: rgba(127, 46, 46, 0.5);*/
+    background-color: #000;
     border-radius: 10px;
-    color: #1eff00;
+    /*color: #1eff00;*/
+    color: #ffecbc;
 }
 
 .back h2, .back h3, .back p {
@@ -177,20 +182,49 @@ main {
 }
 
 .back p {
-    font-size: 1em;
+    font-size: 1.2em;
     line-height: 1.5em;
     text-align: left;
     margin: 5px 0;
-    color: #000; 
+    color: #ffecbc; 
 }
+
+/*.back2 p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+    text-align: left;
+    margin: 5px 0;
+    color: #ffecbc; 
+}*/
 
 .back, li {
     font-family: cursive;
+    font-size: 1.2em;
 }
 
 .greeting {
     color: #ffecbc;
-    font-size: 3em;
+    font-size: 2em;
     font-weight: bold;
 }
 
+.reference {
+    margin-bottom: 10px; /* Adds space between each reference */
+}
+
+.reference p {
+    margin: 0; /* Remove default margin */
+    color: #300909;
+    font-weight: bolder;
+    font-size: 1.4em;
+    text-shadow: 2px 2px 2px #1C6EA4;
+}
+
+.reference a {
+    /*color: inherit;*/ /* Make email links inherit the text color */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.reference a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
